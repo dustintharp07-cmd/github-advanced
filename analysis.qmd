@@ -1,0 +1,19 @@
+---
+title: "GitHub Advanced"
+author: "Dustin Tharp"
+format: html
+execute:
+  echo: false
+---
+
+```{r}
+#| label: setup
+#| include: false
+#| message: false
+library(tidyverse)
+```
+
+```{r}
+ggplot(mpg, aes(x = displ, y = hwy, color = class)) +
+  geom_point()
+```
